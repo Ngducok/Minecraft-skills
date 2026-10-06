@@ -198,6 +198,8 @@ def route(task, context, root):
     names = ['minecraft-project-context','minecraft-evidence']
     if context['platform'] in PLATFORM_SKILLS:
         names.append(PLATFORM_SKILLS[context['platform']])
+    if context['platform'] == 'folia':
+        names.append('minecraft-scheduling')
     if context['edition'] == 'bedrock':
         names.append('minecraft-bedrock-addons')
     for keyword, candidates in ROUTES.items():

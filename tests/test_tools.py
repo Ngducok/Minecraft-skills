@@ -57,6 +57,11 @@ class Contracts(unittest.TestCase):
         self.assertNotIn('minecraft-farming',[x['name'] for x in route('command permission',self.context,ROOT)['selected']])
         self.assertIn('minecraft-farming',[x['name'] for x in route('farm growth',self.context,ROOT)['selected']])
 
+    def test_folia_routes_ownership_scheduler(self):
+        result=route('entity task',self.context|{'platform':'folia'},ROOT)
+        self.assertIn('minecraft-scheduling',[x['name'] for x in result['selected']])
+        self.assertEqual(result['compatibility']['status'],'needs-verification')
+
     def test_bedrock_not_routed_to_java_content(self):
         context=self.context|{'edition':'bedrock','platform':'bedrock','java':None}
         names=[x['name'] for x in route('dialog custom item pack',context,ROOT)['selected']]

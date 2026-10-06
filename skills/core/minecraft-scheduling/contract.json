@@ -8,7 +8,9 @@
       "java"
     ],
     "platforms": [
-      "paper"
+      "paper",
+      "purpur",
+      "folia"
     ],
     "verified_versions": [],
     "policy": "resolve-exact-target"

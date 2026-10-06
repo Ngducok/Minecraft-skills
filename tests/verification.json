@@ -13,7 +13,7 @@
     },
     {
       "command": "python -m tools.cli test",
-      "result": "passed: 17 offline regressions; no LLM execution"
+      "result": "passed: 18 offline regressions; no LLM execution"
     },
     {
       "command": "python -m tools.standards_check",
@@ -22,6 +22,14 @@
     {
       "command": "mvn -f examples/paper-plugin/pom.xml -B package",
       "result": "BUILD SUCCESS; descriptor/entrypoint present; no bundled server APIs"
+    },
+    {
+      "command": "skill-creator quick_validate.py for each skill directory",
+      "result": "passed: 62 skills"
+    },
+    {
+      "command": "minecraft-skills validate after isolated editable installation",
+      "result": "passed: console entrypoint resolves source checkout"
     }
   ],
   "example_artifact_sha256": "52ce0cf566018ae6ec1f5b0169cd9a56e8e8a47230c2493b379bde269a53fd41",
