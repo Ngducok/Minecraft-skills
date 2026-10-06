@@ -1,0 +1,22 @@
+# Evaluation scenario
+
+A plugin compiles on a newer API but fails on an older server; find the first incompatible symbol and smallest compatible change.
+
+## Context
+
+```json
+{
+  "edition": "java",
+  "minecraft": null,
+  "platform": null
+}
+```
+
+## Expected behavior
+
+- Resolve missing target facts before version-dependent generation.
+- Use matching inspected evidence for material API/format claims.
+- Preserve scope and report actual checks separately from unavailable checks.
+- Task-specific verification: Compile against pinned dependencies, start a matching isolated runtime and exercise one affected feature per supported client. State unsupported combinations explicitly.
+
+Manual or authorized external-agent review only. This document is not an executable test or evidence of a passed evaluation.

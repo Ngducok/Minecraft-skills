@@ -1,5 +1,7 @@
-# Datapack smoke example
+# Datapack walkthrough
 
-Target: Java 1.21.11, data format 94.1. Copy this folder into a disposable world's datapacks directory, run `/reload`, inspect errors and `/datapack list`, then `/function agentcheck:load` with a player connected.
+Example target: Java 1.21.11, data format 94.1. No runnable datapack is included.
 
-The load tag is under `tags/function` and functions under `function`, not legacy plural directories. Static tests inspect paths and function references; they do not execute Minecraft's command parser. Do not claim in-game load success without matching server logs.
+For that exact target, document min_format/max_format as [94, 1]. A load tag belongs under data/minecraft/tags/function/load.json and its function under data/<namespace>/function/<name>.mcfunction; verify paths against the requested release rather than copying legacy plural directories.
+
+Generate files in the user's project. In a disposable matching world, inspect reload logs, enabled datapacks and function execution with a player connected. JSON parsing alone does not establish Minecraft command or registry validity.

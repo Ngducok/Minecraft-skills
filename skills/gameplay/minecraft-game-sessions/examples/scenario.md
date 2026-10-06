@@ -1,0 +1,22 @@
+# Evaluation scenario
+
+Implement cooperative timed rounds that recover player state when the last participant disconnects.
+
+## Context
+
+```json
+{
+  "edition": "java",
+  "minecraft": null,
+  "platform": null
+}
+```
+
+## Expected behavior
+
+- Resolve missing target facts before version-dependent generation.
+- Use matching inspected evidence for material API/format claims.
+- Preserve scope and report actual checks separately from unavailable checks.
+- Task-specific verification: Test join/leave during countdown, simultaneous end conditions, reconnect, successive rounds and disable mid-round. Verify no leaked tasks, entities or temporary player state.
+
+Manual or authorized external-agent review only. This document is not an executable test or evidence of a passed evaluation.

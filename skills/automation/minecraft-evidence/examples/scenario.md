@@ -1,0 +1,22 @@
+# Evaluation scenario
+
+An answer proposes an undocumented Dialog callback method; verify its signature and a minimal compile before writing feature code.
+
+## Context
+
+```json
+{
+  "edition": "java",
+  "minecraft": null,
+  "platform": null
+}
+```
+
+## Expected behavior
+
+- Resolve missing target facts before version-dependent generation.
+- Use matching inspected evidence for material API/format claims.
+- Preserve scope and report actual checks separately from unavailable checks.
+- Task-specific verification: Audit material claims against artifacts or opened sources. Include commands/results for performed checks and label skipped runtime/client checks accurately.
+
+Manual or authorized external-agent review only. This document is not an executable test or evidence of a passed evaluation.

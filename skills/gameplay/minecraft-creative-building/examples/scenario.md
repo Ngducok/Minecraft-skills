@@ -1,0 +1,22 @@
+# Evaluation scenario
+
+Add a blueprint preview and bounded paste to a creative plot editor with conflict-aware undo.
+
+## Context
+
+```json
+{
+  "edition": "java",
+  "minecraft": null,
+  "platform": null
+}
+```
+
+## Expected behavior
+
+- Resolve missing target facts before version-dependent generation.
+- Use matching inspected evidence for material API/format claims.
+- Preserve scope and report actual checks separately from unavailable checks.
+- Task-specific verification: Test asymmetric selections, protected boundaries, block entities, cancellation mid-edit and conflicting edits before undo. Inspect actual placement and saved template round-trip.
+
+Manual or authorized external-agent review only. This document is not an executable test or evidence of a passed evaluation.

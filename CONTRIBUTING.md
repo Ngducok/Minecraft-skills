@@ -1,22 +1,15 @@
 # Contributing
 
-Add a narrowly scoped skill at skills/<category>/<minecraft-name>/. Use lowercase hyphen names matching the directory; description explains when to use it. Keep SKILL.md concise with name and quoted description frontmatter. Put structured scope in contract.json, facts/sources in REFERENCE.md, detailed references beside the skill, a realistic request in examples/request.md and a behavioral scenario in tests/scenario.json.
+Add narrowly scoped documentation at skills/<category>/<minecraft-name>/. Use lowercase hyphen names matching the directory. Keep SKILL.md concise, with name and quoted description frontmatter. Put scope in contract.json, evidence in REFERENCE.md, detailed references beside the skill, and request/scenario documents under examples/.
 
-Provide actionable platform-specific guidance, not generic summaries or copied manuals. Do not impose one genre or provider. Include boundaries where similar platform APIs differ. Unknown versions/builds/toolchains stay unresolved.
+Provide actionable platform-specific guidance without imposing a game genre or provider. Unknown versions/builds/toolchains remain unresolved. Preserve instruction authority and authorized scope.
 
-For a new fact, add its primary source ID, URL, inspection date and note to knowledge/sources.json. Version matrix additions need exact release, pack formats and independently sourced platform requirements. Test claims require evidence artifacts and validator support; v1 only permits documented matrix entries. A link existing is not proof of an API signature. Prefer pinned docs/source or a minimal compile probe.
+For a new fact, record its primary source, URL, inspection date and limitations in knowledge/sources.json. Matrix entries need exact releases and independently sourced formats/platform requirements. Claims of compile/runtime/client success require reproducible evidence for that exact target. A source link alone does not prove an API signature.
 
-Run:
+Before submitting, review names/frontmatter, contracts against schemas, source IDs, local links and catalog.json consistency. JSON/YAML parsing and other checks may use available tools outside this repository; no validator, package installation or CI is required by this docs-only library.
 
-```sh
-python -m tools.cli index
-python -m tools.cli validate
-python -m tools.cli test
-python -m tools.standards_check  # requires optional jsonschema + PyYAML, installed by CI
-```
+For scenario review, give an authorized agent the prompt, relevant skill and raw artifacts. Record host/model, exact targets, output, actual checks and unresolved facts. Fabricated symbols or test results fail review. Do not label scenario documents as passed agent tests.
 
-For Paper example changes, run `mvn -f examples/paper-plugin/pom.xml -B package` with Java 21 and Maven. For datapack/pack changes, load a disposable exact-version world/client and attach observed logs/screenshots when possible. Never commit worlds, Minecraft binaries, proprietary assets, tokens or personal paths.
+Do not add tool implementations, executable examples, workflows, generated binaries, worlds, tokens or personal paths. Code snippets inside explanatory documents are allowed when needed to clarify instructions.
 
-Scenario files are not executed by unit tests. For agent evaluation, give an independent authorized agent the scenario, skill and raw artifacts; capture output and checks. Score using tests/AGENT-EVAL.md, record host/model and exact targets, and identify unperformed checks. Do not label static fixtures as LLM regression success.
-
-PR description: problem/outcome, exact scope, sources, performed checks and limits. CI is mandatory structural verification, not universal platform certification. Preserve contributor changes and remote history. Use normal branches/PRs; no force-push requirement.
+PR descriptions should state outcome, scope, sources and performed checks. Preserve contributor changes and remote history.

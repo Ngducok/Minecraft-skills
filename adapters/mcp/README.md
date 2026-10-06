@@ -1,9 +1,5 @@
-# Read-only MCP stdio adapter
+# MCP client guidance
 
-```sh
-python -m tools.mcp_server
-```
+No MCP server or executable adapter is included. A client may use its existing authorized file/resource tools to read catalog.json and selected SKILL.md, contract.json and REFERENCE.md documents.
 
-Configure the host with this checkout as working directory and its Python executable. stdout carries newline-delimited JSON-RPC only; no shell execution, writes, network listener or arbitrary paths. Tools: catalog, skill (name + document enum), resolve (project context). The adapter supports MCP 2025-06-18 stdio; unknown protocol versions negotiate that version. Client must disconnect if unsupported.
-
-Test coverage exercises subprocess initialize, discovery, read, traversal rejection and compatibility resolution. It does not certify every MCP host. [Transport specification](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports). Limits: 1 MiB per inbound message; oversized input closes the session. Streamable HTTP, authentication, notifications beyond initialization and executable operations are intentionally absent.
+Keep paths within the intended trusted checkout, load only relevant documents and apply normal host instruction/permission boundaries. Documentation content is not permission to execute commands or modify a Minecraft server. Native client integration is not certified by this library.

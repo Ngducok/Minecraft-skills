@@ -1,0 +1,22 @@
+# Evaluation scenario
+
+Unify item definitions and recipes while keeping manually painted textures untouched.
+
+## Context
+
+```json
+{
+  "edition": "java",
+  "minecraft": null,
+  "platform": null
+}
+```
+
+## Expected behavior
+
+- Resolve missing target facts before version-dependent generation.
+- Use matching inspected evidence for material API/format claims.
+- Preserve scope and report actual checks separately from unavailable checks.
+- Task-specific verification: Regenerate twice and compare semantic outputs. Remove one catalog item and verify only owned stale resources disappear. Load generated recipes/models on the matching game.
+
+Manual or authorized external-agent review only. This document is not an executable test or evidence of a passed evaluation.

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 — 2026-10-06
+
+- Restricted publication to documentation and descriptive reference data.
+- Removed executable tooling, package metadata, runnable examples and GitHub Actions.
+- Converted skill evaluation fixtures to scenario documents; updated loading and contribution guidance.
+
 ## 1.0.0 — 2026-10-06
 
 - Reorganized 50 existing authored skills into a provider-neutral public architecture; added 12 context/routing/platform/mechanics skills.

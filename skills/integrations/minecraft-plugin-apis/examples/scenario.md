@@ -1,0 +1,22 @@
+# Evaluation scenario
+
+Connect a shop to the existing economy and island API instead of adding a second wallet and claim database.
+
+## Context
+
+```json
+{
+  "edition": "java",
+  "minecraft": null,
+  "platform": null
+}
+```
+
+## Expected behavior
+
+- Resolve missing target facts before version-dependent generation.
+- Use matching inspected evidence for material API/format claims.
+- Preserve scope and report actual checks separately from unavailable checks.
+- Task-specific verification: Run with dependency present, absent and misconfigured. Verify provider failure leaves valuables intact and existing plugin-owned progression survives the integration.
+
+Manual or authorized external-agent review only. This document is not an executable test or evidence of a passed evaluation.
