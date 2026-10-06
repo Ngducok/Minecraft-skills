@@ -1,0 +1,41 @@
+{
+  "name": "minecraft-bedrock-addons",
+  "version": "1.0.0",
+  "description": "Create or debug Minecraft Bedrock behavior/resource packs and Script API add-ons; not Java datapacks or Paper plugins.",
+  "category": "modding",
+  "supports": {
+    "editions": [
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "bedrock-start",
+    "bedrock-script",
+    "geyser-packs"
+  ]
+}

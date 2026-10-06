@@ -1,6 +1,0 @@
-interface:
-  display_name: "Creative tools and reversible edits"
-  short_description: "Minecraft: Creative tools and reversible edits"
-  default_prompt: "Use $minecraft-creative-building for this task: Add a blueprint preview and bounded paste to a creative plot editor with conflict-aware undo."
-policy:
-  allow_implicit_invocation: true

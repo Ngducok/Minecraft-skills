@@ -1,0 +1,40 @@
+{
+  "name": "minecraft-project-context",
+  "version": "1.0.0",
+  "description": "Resolve project context before Minecraft changes. Inspect existing architecture, requested outcome and trust boundaries.",
+  "category": "core",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "agent-skills"
+  ]
+}

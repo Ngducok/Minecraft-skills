@@ -1,0 +1,12 @@
+name: AgentCheck
+version: 1.0.0
+main: org.minecraftskills.AgentCheck
+api-version: '1.21.11'
+commands:
+  agentcheck:
+    description: Verify this isolated example plugin loaded.
+    usage: /agentcheck
+    permission: agentcheck.use
+permissions:
+  agentcheck.use:
+    default: op

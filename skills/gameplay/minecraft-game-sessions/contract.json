@@ -1,0 +1,46 @@
+{
+  "name": "minecraft-game-sessions",
+  "version": "1.0.0",
+  "description": "Build Minecraft lobbies, queues, matches, rounds, spectator flows and isolated game sessions with reliable cleanup.",
+  "category": "gameplay",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "rules_or_source",
+    "state_and_recovery_plan",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "rules-invariants",
+    "multiplayer-authority",
+    "duplication-and-recovery",
+    "relevant-runtime"
+  ],
+  "sources": [
+    "events",
+    "scheduler",
+    "database",
+    "pdc"
+  ]
+}

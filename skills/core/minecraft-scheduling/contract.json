@@ -1,0 +1,42 @@
+{
+  "name": "minecraft-scheduling",
+  "version": "1.0.0",
+  "description": "Fix Minecraft scheduling, asynchronous I/O, task cancellation or Paper/Folia thread-ownership bugs.",
+  "category": "core",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [
+      "paper"
+    ],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "scheduler",
+    "folia"
+  ]
+}

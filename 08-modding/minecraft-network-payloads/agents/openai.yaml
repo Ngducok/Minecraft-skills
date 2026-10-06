@@ -1,6 +1,0 @@
-interface:
-  display_name: "Mod payloads and client authority"
-  short_description: "Minecraft: Mod payloads and client authority"
-  default_prompt: "Use $minecraft-network-payloads for this task: A modded purchase screen sends price and amount; validate a product request server-side instead."
-policy:
-  allow_implicit_invocation: true

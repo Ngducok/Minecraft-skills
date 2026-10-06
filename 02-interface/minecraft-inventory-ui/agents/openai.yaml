@@ -1,6 +1,0 @@
-interface:
-  display_name: "Inventory menus and safe transfers"
-  short_description: "Minecraft: Inventory menus and safe transfers"
-  default_prompt: "Use $minecraft-inventory-ui for this task: A sell basket duplicates items under shift-click and loses leftovers on close; repair its transfer policy."
-policy:
-  allow_implicit_invocation: true

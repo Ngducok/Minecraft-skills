@@ -1,6 +1,0 @@
-interface:
-  display_name: "Recipes, loot and item provenance"
-  short_description: "Minecraft: Recipes, loot and item provenance"
-  default_prompt: "Use $minecraft-recipes-loot for this task: Add a custom crop-processing recipe without allowing ordinary renamed wheat or shift-craft duplication."
-policy:
-  allow_implicit_invocation: true

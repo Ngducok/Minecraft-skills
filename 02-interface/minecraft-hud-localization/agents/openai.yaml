@@ -1,6 +1,0 @@
-interface:
-  display_name: "HUD, tooltips and localized text"
-  short_description: "Minecraft: HUD, tooltips and localized text"
-  default_prompt: "Use $minecraft-hud-localization for this task: Show region-specific farming progress without replacing another plugin scoreboard or exposing untranslated keys."
-policy:
-  allow_implicit_invocation: true

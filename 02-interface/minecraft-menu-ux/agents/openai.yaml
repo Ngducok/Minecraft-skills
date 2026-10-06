@@ -1,6 +1,0 @@
-interface:
-  display_name: "Menu usability across gameplay modes"
-  short_description: "Minecraft: Menu usability across gameplay modes"
-  default_prompt: "Use $minecraft-menu-ux for this task: Redesign a team/loadout picker without turning it into a currency shop."
-policy:
-  allow_implicit_invocation: true

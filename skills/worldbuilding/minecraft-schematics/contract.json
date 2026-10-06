@@ -1,0 +1,42 @@
+{
+  "name": "minecraft-schematics",
+  "version": "1.0.0",
+  "description": "Generate, inspect or convert .litematic, .schem and vanilla structure NBT files and verify their imported blocks/entities.",
+  "category": "worldbuilding",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "sponge",
+    "litematica",
+    "worldedit"
+  ]
+}

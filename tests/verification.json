@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-06",
+  "environment": {
+    "os": "Windows",
+    "python": "3.12",
+    "java": "21",
+    "maven": "3.10.0"
+  },
+  "checks": [
+    {
+      "command": "python -m tools.cli validate",
+      "result": "passed: 62 skill contracts and offline references/provenance"
+    },
+    {
+      "command": "python -m tools.cli test",
+      "result": "passed: 17 offline regressions; no LLM execution"
+    },
+    {
+      "command": "python -m tools.standards_check",
+      "result": "passed with jsonschema 4.25.1 and PyYAML 6.0.2"
+    },
+    {
+      "command": "mvn -f examples/paper-plugin/pom.xml -B package",
+      "result": "BUILD SUCCESS; descriptor/entrypoint present; no bundled server APIs"
+    }
+  ],
+  "example_artifact_sha256": "52ce0cf566018ae6ec1f5b0169cd9a56e8e8a47230c2493b379bde269a53fd41",
+  "paper_api_resolved": "1.21.11-R0.1-20260511.115010-91",
+  "not_run": [
+    "matching Minecraft server startup",
+    "matching Minecraft client pack/render checks",
+    "external LLM skill scenarios",
+    "native host skill discovery",
+    "remote GitHub CI at recording time"
+  ],
+  "paper_api_sha256": "c577b181c11a8674310e56c92a91e31c010b7f04c9bd10b91c3be18374401070"
+}

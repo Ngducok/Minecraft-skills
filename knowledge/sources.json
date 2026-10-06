@@ -1,0 +1,562 @@
+{
+  "paper-start": {
+    "title": "Paper server requirements",
+    "url": "https://docs.papermc.io/paper/getting-started/",
+    "note": "Version table separates Java 21-era Minecraft releases from Java 25-era releases; never copy current defaults into older targets.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "current-architecture-research"
+  },
+  "paper-setup": {
+    "title": "Paper project setup",
+    "url": "https://docs.papermc.io/paper/dev/project-setup/",
+    "note": "Rolling examples use newer dependency coordinates; pin API and toolchain to requested release.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "plugin-yml": {
+    "title": "Paper plugin descriptors",
+    "url": "https://docs.papermc.io/paper/dev/plugin-yml/",
+    "note": "Plugin metadata, API compatibility, commands and permission defaults belong in the correct descriptor.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "commands": {
+    "title": "Paper command registration",
+    "url": "https://docs.papermc.io/paper/dev/command-api/basics/registration/",
+    "note": "Lifecycle registration supports Brigadier commands; classic descriptors and Paper bootstrapping are distinct choices.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "events": {
+    "title": "Paper event listeners",
+    "url": "https://docs.papermc.io/paper/dev/event-listeners/",
+    "note": "Cancellation and priorities affect cooperation with other plugins; observer handlers should not mutate results.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "scheduler": {
+    "title": "Paper scheduling",
+    "url": "https://docs.papermc.io/paper/dev/scheduler/",
+    "note": "Ticks are simulation time; normal Bukkit world access is not made safe merely by moving it off-thread.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "folia": {
+    "title": "Paper and Folia scheduling",
+    "url": "https://docs.papermc.io/paper/dev/folia-support/",
+    "note": "Entity, region, global and async responsibilities differ; setting support metadata does not establish safety.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "dialog": {
+    "title": "Paper Dialog API",
+    "url": "https://docs.papermc.io/paper/dev/dialogs/",
+    "note": "Native Dialog bodies, inputs and custom callbacks are supported; implementation must be checked against target version.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "inventory": {
+    "title": "Custom InventoryHolders",
+    "url": "https://docs.papermc.io/paper/dev/custom-inventory-holder/",
+    "note": "Menu identity can be carried by a holder rather than guessed from display titles.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "inventory-event": {
+    "title": "InventoryClickEvent contract",
+    "url": "https://jd.papermc.io/paper/1.21.11/org/bukkit/event/inventory/InventoryClickEvent.html",
+    "note": "Versioned reference example: menu mutations during a click require attention to event transaction timing.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "pdc": {
+    "title": "Persistent data containers",
+    "url": "https://docs.papermc.io/paper/dev/pdc/",
+    "note": "Namespaced metadata belongs on supported holders; normal blocks and item lore are not equivalent storage mechanisms.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "components": {
+    "title": "Paper data components",
+    "url": "https://docs.papermc.io/paper/dev/data-component-api/",
+    "note": "Component APIs are version-specific; prefer stable metadata interfaces where sufficient.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "config": {
+    "title": "Plugin configuration",
+    "url": "https://docs.papermc.io/paper/dev/plugin-configurations/",
+    "note": "Malformed/missing configuration can otherwise resemble an empty configuration; distinguish configuration failure from defaults.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "database": {
+    "title": "Using databases",
+    "url": "https://docs.papermc.io/paper/dev/using-databases/",
+    "note": "Embedded and standalone database choices differ; JDBC is an API and does not supply every database driver.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "recipes": {
+    "title": "Paper recipes",
+    "url": "https://docs.papermc.io/paper/dev/recipes/",
+    "note": "Namespaced recipe registration is available; ingredient behavior must match the chosen recipe interface.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "display": {
+    "title": "Display entities",
+    "url": "https://docs.papermc.io/paper/dev/display-entities/",
+    "note": "Displays provide visual transforms/interpolation; they do not automatically provide gameplay interaction or collision.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "profile": {
+    "title": "Paper profiling",
+    "url": "https://docs.papermc.io/paper/profiling/",
+    "note": "Modern Paper bundles spark; profile real load before changing tick-heavy systems.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "update": {
+    "title": "Paper updates",
+    "url": "https://docs.papermc.io/paper/updating/",
+    "note": "Upgrade worlds and plugins with a restorable backup; source/build compatibility is separate from data compatibility.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "packs": {
+    "title": "Adventure resource-pack delivery",
+    "url": "https://docs.papermc.io/adventure/resource-pack/",
+    "note": "Pack delivery uses URLs, identities and statuses; status replies are client-controlled and are not an integrity proof.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "localization": {
+    "title": "Adventure localization",
+    "url": "https://docs.papermc.io/adventure/localization/",
+    "note": "Client resource-pack translation and server translation differ; rendering policy must identify which side owns the text.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "minimessage": {
+    "title": "Safe dynamic MiniMessage replacements",
+    "url": "https://docs.papermc.io/adventure/minimessage/dynamic-replacements/",
+    "note": "Use unparsed or component placeholders for untrusted strings rather than allowing formatting/action injection.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "release-12111": {
+    "title": "Minecraft Java 1.21.11 release notes",
+    "url": "https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-11",
+    "note": "Historical example only: release notes record resource/data format changes and item/block atlas constraints; not a global target version.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "current-architecture-research"
+  },
+  "release-1219": {
+    "title": "Java Edition 1.21.9 release notes",
+    "url": "https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-9",
+    "note": "Official rolling documentation; resolve target release before using symbols.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "current-architecture-research"
+  },
+  "worldgen": {
+    "title": "ChunkGenerator contract",
+    "url": "https://jd.papermc.io/paper/1.21.11/org/bukkit/generator/ChunkGenerator.html",
+    "note": "Versioned example: generation callbacks need thread safety and must not recursively fetch their generating chunk.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "harvest": {
+    "title": "PlayerHarvestBlockEvent",
+    "url": "https://jd.papermc.io/paper/1.21.11/org/bukkit/event/player/PlayerHarvestBlockEvent.html",
+    "note": "Right-click harvest has a distinct event; block break is not every crop interaction.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "age": {
+    "title": "Block Ageable",
+    "url": "https://jd.papermc.io/paper/1.21.11/org/bukkit/block/data/Ageable.html",
+    "note": "Crop age is block data, distinct from entity Ageable; use material-specific maximum age.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "breed": {
+    "title": "EntityBreedEvent",
+    "url": "https://jd.papermc.io/paper/1.21.11/org/bukkit/event/entity/EntityBreedEvent.html",
+    "note": "Breeding can be observed/cancelled; persistence, attribution and custom traits remain application responsibilities.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "damage": {
+    "title": "EntityDamageByEntityEvent",
+    "url": "https://jd.papermc.io/paper/1.21.11/org/bukkit/event/entity/EntityDamageByEntityEvent.html",
+    "note": "Damage event exposes source interactions; protection and projectile attribution need separate handling.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "scoreboard": {
+    "title": "Scoreboard Objective",
+    "url": "https://jd.papermc.io/paper/1.21.11/org/bukkit/scoreboard/Objective.html",
+    "note": "Native scoreboard supplies objectives and display slots; arbitrary pixel positioning is not part of this interface.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "worldedit": {
+    "title": "WorldEdit clipboard and schematic API",
+    "url": "https://worldedit.enginehub.org/en/latest/api/examples/clipboard/",
+    "note": "Clipboard origin, transforms, format readers and EditSession lifetime matter when pasting.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "worldguard": {
+    "title": "WorldGuard protection queries",
+    "url": "https://worldguard.enginehub.org/en/latest/developer/regions/protection-query/",
+    "note": "Use flag-aware protection queries; bypass handling is separate from region membership.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "sponge": {
+    "title": "Sponge schematic v3 specification",
+    "url": "https://github.com/SpongePowered/Schematic-Specification/blob/master/versions/schematic-3.md",
+    "note": "Sponge format is its own schema; it is not interchangeable with Litematica or vanilla structure NBT.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "litematica": {
+    "title": "Litematica author repository",
+    "url": "https://github.com/maruohon/litematica",
+    "note": "Author implementation is authoritative for litematic serialization; exact packing/version constants must be read from the target branch before writing a serializer.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "bentobox": {
+    "title": "BentoBox documentation",
+    "url": "https://docs.bentobox.world/en/latest/",
+    "note": "Existing island/blueprint infrastructure should be evaluated before writing a complete island platform.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "fabric": {
+    "title": "Fabric project setup",
+    "url": "https://docs.fabricmc.net/develop/getting-started/creating-a-project",
+    "note": "Generator accepts target Minecraft version; loader/API/Loom and mappings must be selected together.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "fabric-net": {
+    "title": "Fabric networking",
+    "url": "https://docs.fabricmc.net/develop/networking",
+    "note": "Logical client/server payload handling and validation are separate from singleplayer appearance.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "datagen": {
+    "title": "Fabric data generation",
+    "url": "https://docs.fabricmc.net/develop/data-generation/setup",
+    "note": "Datagen produces version-specific JSON for recipes, tags and assets; generated output is still validated by the game.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "neoforge": {
+    "title": "NeoForge project setup",
+    "url": "https://docs.neoforged.net/docs/gettingstarted/",
+    "note": "Use the target-version toolchain and event model; Fabric and NeoForge APIs are not drop-in replacements.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "neoforge-net": {
+    "title": "NeoForge payload registration",
+    "url": "https://docs.neoforged.net/docs/networking/payload/",
+    "note": "Payload registration, execution thread and size limits are explicit versioned contracts.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "attachments": {
+    "title": "NeoForge data attachments",
+    "url": "https://docs.neoforged.net/docs/datastorage/attachments/",
+    "note": "Persistent and synchronized attachments differ; death cloning and End return must not duplicate state.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "vault": {
+    "title": "VaultAPI author repository",
+    "url": "https://github.com/MilkBowl/VaultAPI",
+    "note": "Vault bridges economy providers; withdrawal responses and provider availability must be checked.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "luckperms": {
+    "title": "LuckPerms developer API",
+    "url": "https://github.com/LuckPerms/LuckPerms/wiki/Developer-API",
+    "note": "Use provider APIs and context-sensitive permission queries; changes to account state need supported persistence.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "velocity-security": {
+    "title": "Velocity backend security",
+    "url": "https://docs.papermc.io/velocity/security/",
+    "note": "Offline backend authentication requires network isolation and trusted forwarding; forwarding alone is not a firewall.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "velocity-forwarding": {
+    "title": "Velocity player forwarding",
+    "url": "https://docs.papermc.io/velocity/player-information-forwarding/",
+    "note": "Forwarding mode must agree with backend configuration and installed platform support.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "geyser-packs": {
+    "title": "Geyser resource packs",
+    "url": "https://geysermc.org/wiki/geyser/packs/",
+    "note": "Java resource packs are not automatically converted to Bedrock packs.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "geyser-items": {
+    "title": "Geyser custom items",
+    "url": "https://geysermc.org/wiki/geyser/custom-items/",
+    "note": "Custom item models require version-compatible mappings and separate Bedrock assets.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "mockbukkit": {
+    "title": "MockBukkit author repository",
+    "url": "https://github.com/MockBukkit/MockBukkit",
+    "note": "Mock API coverage does not prove packet behavior, native registries or client rendering.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "create": {
+    "title": "Create author repository",
+    "url": "https://github.com/Creators-of-Create/Create",
+    "note": "Automation design reference; Create is a mod and cannot be installed as an ordinary Paper plugin.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "usage": {
+    "title": "Minecraft usage guidelines",
+    "url": "https://www.minecraft.net/en-us/usage-guidelines",
+    "note": "Review current first-party rules when the actual task concerns monetization, branding or distribution; no blanket legal clearance.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "text-access": {
+    "title": "Microsoft game text guidance",
+    "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/101",
+    "note": "Readability depends on actual rendered size and display conditions, not only logical font size.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "contrast-access": {
+    "title": "Microsoft game contrast guidance",
+    "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/102",
+    "note": "Contrast and non-color cues support readability and status recognition; screenshots alone do not establish full accessibility conformance.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "bedrock-start": {
+    "title": "Bedrock add-on introduction",
+    "url": "https://learn.microsoft.com/en-us/minecraft/creator/documents/gettingstarted?view=minecraft-bedrock-stable",
+    "note": "Bedrock resource/behavior packs and add-on packaging differ from Java assets and datapacks.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "bedrock-script": {
+    "title": "Bedrock server Script API",
+    "url": "https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server/minecraft-server?view=minecraft-bedrock-stable",
+    "note": "Stable and preview Script API surfaces need matching module dependencies and engine support.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "paper-vanilla": {
+    "title": "Paper vanilla compatibility",
+    "url": "https://docs.papermc.io/paper/vanilla/",
+    "note": "Paper can differ from vanilla simulation; technical contraptions and adventure maps need target-runtime testing.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "mob-goals": {
+    "title": "Paper mob goals",
+    "url": "https://docs.papermc.io/paper/dev/mob-goals/",
+    "note": "Goal priorities, behavior types and lifecycle matter; goals are constrained by mob capabilities.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "pathfinder": {
+    "title": "Paper entity pathfinder",
+    "url": "https://docs.papermc.io/paper/dev/entity-pathfinder/",
+    "note": "Navigation requests can fail; native movement rules still apply.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "teleport": {
+    "title": "Paper teleportation",
+    "url": "https://docs.papermc.io/paper/dev/entity-teleport/",
+    "note": "Async teleport avoids blocking chunk loads; blocking its future on the tick thread can deadlock.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "team": {
+    "title": "Paper Team API: versioned example",
+    "url": "https://jd.papermc.io/paper/1.21.11/org/bukkit/scoreboard/Team.html",
+    "note": "Presentation teams expose friendly-fire and collision options but do not replace authoritative group membership/permissions.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "advancement": {
+    "title": "Paper AdvancementProgress: versioned example",
+    "url": "https://jd.papermc.io/paper/1.21.11/org/bukkit/advancement/AdvancementProgress.html",
+    "note": "Criteria award/revocation and completion are platform contracts; reward uniqueness remains application policy.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "redstone": {
+    "title": "Paper BlockRedstoneEvent: versioned example",
+    "url": "https://jd.papermc.io/paper/1.21.11/org/bukkit/event/block/BlockRedstoneEvent.html",
+    "note": "Current-change events are one hook; they are not a complete simulation/transfer log.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "fabric-attributes": {
+    "title": "Fabric entity attributes",
+    "url": "https://docs.fabricmc.net/develop/entities/attributes",
+    "note": "Attribute registration and modifiers depend on target mappings and game release.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "neoforge-attributes": {
+    "title": "NeoForge entity attributes",
+    "url": "https://docs.neoforged.net/docs/entities/attributes/",
+    "note": "Attribute applicability, registration and synchronization require version-aware verification; do not copy every table claim as a tested formula.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "bedrock-world": {
+    "title": "Bedrock World API",
+    "url": "https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server/world?view=minecraft-bedrock-stable",
+    "note": "Native dimensions, events and world access differ from Java platforms and have lifecycle restrictions.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "codex-agents": {
+    "title": "Official OpenAI subagent documentation",
+    "url": "https://learn.chatgpt.com/docs/agent-configuration/subagents",
+    "note": "Subagent availability, orchestration and sandbox behavior are host-specific; current tools and instructions govern execution.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "codex-instructions": {
+    "title": "Official OpenAI AGENTS.md guidance",
+    "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
+    "note": "Instruction scope follows repository hierarchy; reusable skills must not silently rewrite global or project policy.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "prior-library-research"
+  },
+  "agent-skills": {
+    "title": "Agent Skills specification",
+    "url": "https://agentskills.io/specification",
+    "note": "Official rolling documentation; resolve target release before using symbols.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "current-architecture-research"
+  },
+  "purpur": {
+    "title": "Purpur documentation",
+    "url": "https://purpurmc.org/docs/",
+    "note": "Official rolling documentation; resolve target release before using symbols.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "current-architecture-research"
+  },
+  "spigot-build": {
+    "title": "Spigot BuildTools",
+    "url": "https://www.spigotmc.org/wiki/buildtools/",
+    "note": "Official rolling documentation; resolve target release before using symbols.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "current-architecture-research"
+  },
+  "velocity-start": {
+    "title": "Velocity getting started",
+    "url": "https://docs.papermc.io/velocity/getting-started/",
+    "note": "Official rolling documentation; resolve target release before using symbols.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "current-architecture-research"
+  },
+  "forge-start": {
+    "title": "Forge getting started",
+    "url": "https://docs.minecraftforge.net/en/latest/gettingstarted/",
+    "note": "Official rolling documentation; resolve target release before using symbols.",
+    "status": "inspected",
+    "checked": "2026-10-06",
+    "inspection_origin": "current-architecture-research"
+  }
+}

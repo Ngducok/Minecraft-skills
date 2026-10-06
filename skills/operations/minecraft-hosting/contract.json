@@ -1,0 +1,42 @@
+{
+  "name": "minecraft-hosting",
+  "version": "1.0.0",
+  "description": "Set up or debug Minecraft server startup, local/public resource-pack hosting, ports, scripts and restart behavior on Windows or Linux.",
+  "category": "operations",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "paper-start",
+    "packs",
+    "velocity-security"
+  ]
+}

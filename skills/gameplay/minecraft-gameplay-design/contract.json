@@ -1,0 +1,46 @@
+{
+  "name": "minecraft-gameplay-design",
+  "version": "1.0.0",
+  "description": "Research or design Minecraft mechanics across survival, creative, adventure, PvP/PvE, minigames and technical play without imposing a genre.",
+  "category": "gameplay",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "rules_or_source",
+    "state_and_recovery_plan",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "rules-invariants",
+    "multiplayer-authority",
+    "duplication-and-recovery",
+    "relevant-runtime"
+  ],
+  "sources": [
+    "paper-vanilla",
+    "fabric",
+    "neoforge",
+    "bedrock-start"
+  ]
+}

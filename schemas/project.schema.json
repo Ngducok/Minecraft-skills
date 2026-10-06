@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ngducok.github.io/Minecraft-skills/schemas/project.schema.json",
+  "type": "object",
+  "properties": {
+    "edition": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "java",
+        "bedrock",
+        null
+      ]
+    },
+    "minecraft": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "platform": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "vanilla",
+        "paper",
+        "purpur",
+        "spigot",
+        "folia",
+        "velocity",
+        "fabric",
+        "forge",
+        "neoforge",
+        "bedrock",
+        "hybrid",
+        null
+      ]
+    },
+    "platform_version": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "java": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "build_system": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "gradle",
+        "maven",
+        "none",
+        null
+      ]
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "name",
+          "version",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "client_versions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "resource_pack": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "data_pack": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+    }
+  },
+  "required": [
+    "edition",
+    "minecraft",
+    "platform",
+    "platform_version",
+    "java",
+    "build_system",
+    "dependencies",
+    "client_versions",
+    "resource_pack",
+    "data_pack"
+  ],
+  "additionalProperties": false
+}

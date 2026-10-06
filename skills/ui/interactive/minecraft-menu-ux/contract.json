@@ -1,0 +1,46 @@
+{
+  "name": "minecraft-menu-ux",
+  "version": "1.0.0",
+  "description": "Review Minecraft menus, selectors, loadouts, crafting screens, shops and settings for readable state and reliable input.",
+  "category": "ui/interactive",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "ui_source_or_assets",
+    "interaction_handlers",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "input-boundaries",
+    "state-transitions",
+    "gui-scale-and-hit-testing",
+    "matching-client-render"
+  ],
+  "sources": [
+    "dialog",
+    "inventory",
+    "text-access",
+    "contrast-access"
+  ]
+}

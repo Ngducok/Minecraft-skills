@@ -1,0 +1,16 @@
+{
+  "skill": "minecraft-combat-rules",
+  "prompt": "Add a friendly-fire rule to a team arena while preserving vanilla armor and attack cooldowns.",
+  "context": {
+    "edition": "java",
+    "minecraft": null,
+    "platform": null
+  },
+  "expected": [
+    "Resolve missing target facts before version-dependent generation.",
+    "Use matching inspected evidence for material API/format claims.",
+    "Preserve scope and report actual checks separately from unavailable checks.",
+    "Task-specific verification: Exercise melee, projectile, indirect/environmental damage, cancelled protection events and concurrent lethal hits. Compare intended versus actual damage and attribution."
+  ],
+  "evaluation": "manual-or-external-agent; not executed by structural test runner"
+}

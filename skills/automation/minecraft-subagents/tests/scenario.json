@@ -1,0 +1,16 @@
+{
+  "skill": "minecraft-subagents",
+  "prompt": "Split an authorized crossplay review into Java UI and Bedrock mapping checks, then reconcile their evidence.",
+  "context": {
+    "edition": "java",
+    "minecraft": null,
+    "platform": null
+  },
+  "expected": [
+    "Resolve missing target facts before version-dependent generation.",
+    "Use matching inspected evidence for material API/format claims.",
+    "Preserve scope and report actual checks separately from unavailable checks.",
+    "Task-specific verification: Confirm task boundaries, source-backed results and non-overlapping edits. Test the combined result; report unavailable delegation honestly and perform the work locally when feasible."
+  ],
+  "evaluation": "manual-or-external-agent; not executed by structural test runner"
+}

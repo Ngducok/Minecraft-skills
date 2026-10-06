@@ -1,0 +1,44 @@
+{
+  "name": "minecraft-pack-delivery",
+  "version": "1.0.0",
+  "description": "Build, host or debug Minecraft Java resource-pack metadata, URLs, hashes, required-pack status and client compatibility.",
+  "category": "resourcepack",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "namespaced_assets_or_data",
+    "pack_metadata",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "exact-format",
+    "parse-and-readback",
+    "matching-runtime-reload",
+    "relevant-client-render"
+  ],
+  "sources": [
+    "packs",
+    "release-1219",
+    "release-12111"
+  ]
+}

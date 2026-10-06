@@ -1,6 +1,0 @@
-interface:
-  display_name: "Minecraft releases, backups and rollback"
-  short_description: "Minecraft: Minecraft releases, backups and rollback"
-  default_prompt: "Use $minecraft-release-recovery for this task: Release a custom-item update with a pack and schema migration while retaining a valid restore point."
-policy:
-  allow_implicit_invocation: true

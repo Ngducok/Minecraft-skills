@@ -1,0 +1,41 @@
+{
+  "name": "minecraft-permission-providers",
+  "version": "1.0.0",
+  "description": "Integrate LuckPerms or existing Minecraft permission services, contextual access and temporary/admin grants.",
+  "category": "integrations",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "luckperms",
+    "plugin-yml"
+  ]
+}

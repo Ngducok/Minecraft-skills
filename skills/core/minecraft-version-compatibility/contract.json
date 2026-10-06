@@ -1,0 +1,44 @@
+{
+  "name": "minecraft-version-compatibility",
+  "version": "1.0.0",
+  "description": "Select compatible Minecraft versions, loaders, Java toolchains and APIs when starting, upgrading or diagnosing a Minecraft project.",
+  "category": "core",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "paper-start",
+    "paper-setup",
+    "fabric",
+    "neoforge",
+    "release-12111"
+  ]
+}

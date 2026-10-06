@@ -1,0 +1,48 @@
+{
+  "name": "minecraft-survival-simulation",
+  "version": "1.0.0",
+  "description": "Tune Minecraft survival simulation, growth, breeding, spawning, hunger, weather and renewable resources while preserving target-runtime behavior.",
+  "category": "gameplay",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "rules_or_source",
+    "state_and_recovery_plan",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "rules-invariants",
+    "multiplayer-authority",
+    "duplication-and-recovery",
+    "relevant-runtime"
+  ],
+  "sources": [
+    "paper-vanilla",
+    "age",
+    "breed",
+    "harvest",
+    "scheduler",
+    "bedrock-world"
+  ]
+}

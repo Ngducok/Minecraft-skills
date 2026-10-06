@@ -1,6 +1,0 @@
-interface:
-  display_name: "Claims, protection and world edits"
-  short_description: "Minecraft: Claims, protection and world edits"
-  default_prompt: "Use $minecraft-claims for this task: An area hoe respects its clicked block but harvests a neighbor island; validate every affected location."
-policy:
-  allow_implicit_invocation: true

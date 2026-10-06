@@ -1,6 +1,0 @@
-interface:
-  display_name: "Minecraft verification and regression checks"
-  short_description: "Minecraft: Minecraft verification and regression checks"
-  default_prompt: "Use $minecraft-testing for this task: Verify a resource-pack shop and harvest change without restarting the user's live server."
-policy:
-  allow_implicit_invocation: true

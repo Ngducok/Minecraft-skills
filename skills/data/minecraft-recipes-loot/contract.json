@@ -1,0 +1,42 @@
+{
+  "name": "minecraft-recipes-loot",
+  "version": "1.0.0",
+  "description": "Implement Minecraft crafting, furnace/processing recipes or loot tables while preserving custom item identity and preventing value loops.",
+  "category": "data",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "recipes",
+    "components",
+    "datagen"
+  ]
+}

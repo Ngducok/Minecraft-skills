@@ -1,6 +1,0 @@
-interface:
-  display_name: "Economy, island and plugin API integration"
-  short_description: "Minecraft: Economy, island and plugin API integration"
-  default_prompt: "Use $minecraft-plugin-apis for this task: Connect a shop to the existing economy and island API instead of adding a second wallet and claim database."
-policy:
-  allow_implicit_invocation: true

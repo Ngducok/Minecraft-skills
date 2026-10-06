@@ -1,0 +1,47 @@
+{
+  "name": "minecraft-fabric-mod",
+  "version": "1.0.0",
+  "description": "Create or maintain Fabric Minecraft Java mods, registries, entrypoints and client/server code separation.",
+  "category": "modding/fabric",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [
+      "fabric"
+    ],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "source_files",
+    "descriptor_or_configuration",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api",
+    "compile",
+    "artifact-inspection",
+    "startup-shutdown",
+    "relevant-client-server-behavior"
+  ],
+  "sources": [
+    "fabric",
+    "fabric-net",
+    "datagen"
+  ]
+}

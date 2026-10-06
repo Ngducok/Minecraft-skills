@@ -1,6 +1,0 @@
-interface:
-  display_name: "Pack compatibility and delivery"
-  short_description: "Minecraft: Pack compatibility and delivery"
-  default_prompt: "Use $minecraft-pack-delivery for this task: A pack works from the resource-pack folder but fails when sent by a server; trace delivery and exact ZIP bytes."
-policy:
-  allow_implicit_invocation: true

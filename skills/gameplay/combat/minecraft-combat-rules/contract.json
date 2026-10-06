@@ -1,0 +1,48 @@
+{
+  "name": "minecraft-combat-rules",
+  "version": "1.0.0",
+  "description": "Implement Minecraft PvP/PvE damage, equipment effects, friendly fire, attribution and encounter rules without assuming an RPG stat system.",
+  "category": "gameplay/combat",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "rules_or_source",
+    "state_and_recovery_plan",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "rules-invariants",
+    "multiplayer-authority",
+    "duplication-and-recovery",
+    "relevant-runtime"
+  ],
+  "sources": [
+    "damage",
+    "team",
+    "events",
+    "fabric-attributes",
+    "neoforge-attributes",
+    "worldguard"
+  ]
+}

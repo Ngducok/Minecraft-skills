@@ -1,6 +1,0 @@
-interface:
-  display_name: "Minecraft task routing"
-  short_description: "Minecraft: Minecraft task routing"
-  default_prompt: "Use $minecraft-agent for this task: Plan a survival extension, creative editor or arena game using only relevant mechanics and verified target APIs."
-policy:
-  allow_implicit_invocation: true

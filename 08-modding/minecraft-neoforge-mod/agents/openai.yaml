@@ -1,6 +1,0 @@
-interface:
-  display_name: "NeoForge mod development"
-  short_description: "Minecraft: NeoForge mod development"
-  default_prompt: "Use $minecraft-neoforge-mod for this task: Port a NeoForge player progression attachment while preserving XP after death and avoiding duplicate End-return rewards."
-policy:
-  allow_implicit_invocation: true

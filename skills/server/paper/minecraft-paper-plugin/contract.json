@@ -1,0 +1,47 @@
+{
+  "name": "minecraft-paper-plugin",
+  "version": "1.0.0",
+  "description": "Create or maintain Bukkit/Paper plugins, plugin descriptors, service boundaries and startup/shutdown behavior.",
+  "category": "server/paper",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [
+      "paper"
+    ],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "source_files",
+    "descriptor_or_configuration",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api",
+    "compile",
+    "artifact-inspection",
+    "startup-shutdown",
+    "relevant-client-server-behavior"
+  ],
+  "sources": [
+    "plugin-yml",
+    "paper-setup",
+    "events"
+  ]
+}

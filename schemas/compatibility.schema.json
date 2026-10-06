@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ngducok.github.io/Minecraft-skills/schemas/compatibility.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "enum": [
+        1
+      ]
+    },
+    "releases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "edition": {
+            "type": "string",
+            "enum": [
+              "java",
+              "bedrock"
+            ]
+          },
+          "minecraft": {
+            "type": "string",
+            "minLength": 1
+          },
+          "resource_pack": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "data_pack": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "official",
+              "maintainer",
+              "community",
+              "inference"
+            ]
+          },
+          "verification": {
+            "type": "string",
+            "enum": [
+              "documented",
+              "compile-tested",
+              "runtime-tested",
+              "client-tested"
+            ]
+          },
+          "checked": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "platforms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "enum": [
+                    "vanilla",
+                    "paper",
+                    "purpur",
+                    "spigot",
+                    "folia",
+                    "velocity",
+                    "fabric",
+                    "forge",
+                    "neoforge",
+                    "bedrock",
+                    "hybrid"
+                  ]
+                },
+                "java_recommended": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 1
+                },
+                "source": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                },
+                "verification": {
+                  "type": "string",
+                  "enum": [
+                    "documented",
+                    "compile-tested",
+                    "runtime-tested"
+                  ]
+                },
+                "build": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1,
+                  "maxLength": 100
+                }
+              },
+              "required": [
+                "name",
+                "java_recommended",
+                "source",
+                "verification",
+                "build"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "compile_tested": {
+            "type": "boolean"
+          },
+          "runtime_tested": {
+            "type": "boolean"
+          },
+          "client_tested": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "edition",
+          "minecraft",
+          "resource_pack",
+          "data_pack",
+          "source",
+          "confidence",
+          "verification",
+          "checked",
+          "platforms",
+          "compile_tested",
+          "runtime_tested",
+          "client_tested"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "releases"
+  ],
+  "additionalProperties": false
+}

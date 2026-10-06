@@ -1,0 +1,41 @@
+{
+  "name": "minecraft-proxy-security",
+  "version": "1.0.0",
+  "description": "Configure or debug Minecraft Velocity/Bungee-style proxy identity forwarding and protected backend connections.",
+  "category": "integrations",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "velocity-security",
+    "velocity-forwarding"
+  ]
+}

@@ -1,6 +1,0 @@
-interface:
-  display_name: "Permission providers and contexts"
-  short_description: "Minecraft: Permission providers and contexts"
-  default_prompt: "Use $minecraft-permission-providers for this task: Grant access to one farm action in one world without granting a global admin permission."
-policy:
-  allow_implicit_invocation: true

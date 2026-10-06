@@ -1,0 +1,44 @@
+{
+  "name": "minecraft-animation-sound",
+  "version": "1.0.0",
+  "description": "Add or assess resource-pack texture animation, display-entity interpolation, menu motion and gameplay sound feedback.",
+  "category": "resourcepack",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "namespaced_assets_or_data",
+    "pack_metadata",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "exact-format",
+    "parse-and-readback",
+    "matching-runtime-reload",
+    "relevant-client-render"
+  ],
+  "sources": [
+    "display",
+    "packs",
+    "contrast-access"
+  ]
+}

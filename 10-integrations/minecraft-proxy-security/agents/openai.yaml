@@ -1,6 +1,0 @@
-interface:
-  display_name: "Proxies, forwarding and backend security"
-  short_description: "Minecraft: Proxies, forwarding and backend security"
-  default_prompt: "Use $minecraft-proxy-security for this task: A proxy network lets users bypass the proxy and impersonate offline-mode accounts; close the backend path."
-policy:
-  allow_implicit_invocation: true

@@ -1,6 +1,0 @@
-interface:
-  display_name: "Litematic, Sponge schematics and structures"
-  short_description: "Minecraft: Litematic, Sponge schematics and structures"
-  default_prompt: "Use $minecraft-schematics for this task: A generated starter .litematic imports as empty; validate its schema, palette and packed state array."
-policy:
-  allow_implicit_invocation: true

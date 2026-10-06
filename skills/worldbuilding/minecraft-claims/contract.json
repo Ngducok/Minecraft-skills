@@ -1,0 +1,41 @@
+{
+  "name": "minecraft-claims",
+  "version": "1.0.0",
+  "description": "Implement Minecraft island/region authorization or integrate protection checks for building, harvesting, fluids, entities and machines.",
+  "category": "worldbuilding",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "worldguard",
+    "events"
+  ]
+}

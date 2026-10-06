@@ -1,0 +1,46 @@
+{
+  "name": "minecraft-spigot-plugin",
+  "version": "1.0.0",
+  "description": "Build Spigot/Bukkit plugins with target-specific APIs and descriptors.",
+  "category": "server/spigot",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [
+      "spigot"
+    ],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "source_files",
+    "descriptor_or_configuration",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api",
+    "compile",
+    "artifact-inspection",
+    "startup-shutdown",
+    "relevant-client-server-behavior"
+  ],
+  "sources": [
+    "spigot-build",
+    "plugin-yml"
+  ]
+}

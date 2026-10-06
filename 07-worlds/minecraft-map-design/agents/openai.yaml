@@ -1,6 +1,0 @@
-interface:
-  display_name: "Maps, arenas and playable spaces"
-  short_description: "Minecraft: Maps, arenas and playable spaces"
-  default_prompt: "Use $minecraft-map-design for this task: Prepare a reusable arena template and a creative plot template with different reset and ownership rules."
-policy:
-  allow_implicit_invocation: true

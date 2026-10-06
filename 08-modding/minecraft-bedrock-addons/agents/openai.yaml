@@ -1,6 +1,0 @@
-interface:
-  display_name: "Bedrock add-ons and scripts"
-  short_description: "Minecraft: Bedrock add-ons and scripts"
-  default_prompt: "Use $minecraft-bedrock-addons for this task: Build a stable Bedrock farming add-on without copying Java crop event or NBT code."
-policy:
-  allow_implicit_invocation: true

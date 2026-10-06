@@ -1,0 +1,49 @@
+{
+  "name": "minecraft-entity-ai",
+  "version": "1.0.0",
+  "description": "Implement Minecraft mob/NPC/pet behavior, navigation, spawning and entity lifecycle on the chosen plugin/mod/add-on platform.",
+  "category": "gameplay",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "rules_or_source",
+    "state_and_recovery_plan",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "rules-invariants",
+    "multiplayer-authority",
+    "duplication-and-recovery",
+    "relevant-runtime"
+  ],
+  "sources": [
+    "mob-goals",
+    "pathfinder",
+    "display",
+    "scheduler",
+    "fabric",
+    "neoforge",
+    "bedrock-script"
+  ]
+}

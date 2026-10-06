@@ -1,0 +1,16 @@
+{
+  "skill": "minecraft-inventory-ui",
+  "prompt": "A sell basket duplicates items under shift-click and loses leftovers on close; repair its transfer policy.",
+  "context": {
+    "edition": "java",
+    "minecraft": null,
+    "platform": null
+  },
+  "expected": [
+    "Resolve missing target facts before version-dependent generation.",
+    "Use matching inspected evidence for material API/format claims.",
+    "Preserve scope and report actual checks separately from unavailable checks.",
+    "Task-specific verification: Use a transfer matrix covering all click actions, inventory full, cursor occupied and interrupted close. Assert total items before/after plus deliberate sales or costs."
+  ],
+  "evaluation": "manual-or-external-agent; not executed by structural test runner"
+}

@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "name": "minecraft-agent",
+      "category": "routing",
+      "description": "Route broad Minecraft development and research tasks to edition-appropriate platform, gameplay, UI, asset and operations skills.",
+      "path": "skills/routing/minecraft-agent"
+    },
+    {
+      "name": "minecraft-animation-sound",
+      "category": "resourcepack",
+      "description": "Add or assess resource-pack texture animation, display-entity interpolation, menu motion and gameplay sound feedback.",
+      "path": "skills/resourcepack/minecraft-animation-sound"
+    },
+    {
+      "name": "minecraft-bedrock-addons",
+      "category": "modding",
+      "description": "Create or debug Minecraft Bedrock behavior/resource packs and Script API add-ons; not Java datapacks or Paper plugins.",
+      "path": "skills/modding/minecraft-bedrock-addons"
+    },
+    {
+      "name": "minecraft-bitmap-fonts",
+      "category": "resourcepack",
+      "description": "Create resource-pack font glyphs, custom GUI panels, icons or debug glyph advances, clipping and clickable text bounds.",
+      "path": "skills/resourcepack/minecraft-bitmap-fonts"
+    },
+    {
+      "name": "minecraft-claims",
+      "category": "worldbuilding",
+      "description": "Implement Minecraft island/region authorization or integrate protection checks for building, harvesting, fluids, entities and machines.",
+      "path": "skills/worldbuilding/minecraft-claims"
+    },
+    {
+      "name": "minecraft-combat-rules",
+      "category": "gameplay/combat",
+      "description": "Implement Minecraft PvP/PvE damage, equipment effects, friendly fire, attribution and encounter rules without assuming an RPG stat system.",
+      "path": "skills/gameplay/combat/minecraft-combat-rules"
+    },
+    {
+      "name": "minecraft-commands-permissions",
+      "category": "commands",
+      "description": "Implement Minecraft commands, arguments, suggestions and server-side permission checks on Paper or equivalent command platforms.",
+      "path": "skills/commands/minecraft-commands-permissions"
+    },
+    {
+      "name": "minecraft-configuration",
+      "category": "data",
+      "description": "Add or migrate Minecraft plugin/mod configuration, catalogs, probability tables and feature flags safely.",
+      "path": "skills/data/minecraft-configuration"
+    },
+    {
+      "name": "minecraft-coworker",
+      "category": "automation",
+      "description": "Collaborate with a human or another coding agent on Minecraft work using clear ownership, evidence, concise updates and reviewable handoffs.",
+      "path": "skills/automation/minecraft-coworker"
+    },
+    {
+      "name": "minecraft-crafting-automation",
+      "category": "gameplay",
+      "description": "Implement or debug Minecraft crafting, redstone interactions, processing queues and storage logistics using native mechanics where possible.",
+      "path": "skills/gameplay/minecraft-crafting-automation"
+    },
+    {
+      "name": "minecraft-creative-building",
+      "category": "gameplay",
+      "description": "Build Minecraft creative/building workflows, selection tools, blueprints, batch edits and undo with ownership and bounded world changes.",
+      "path": "skills/gameplay/minecraft-creative-building"
+    },
+    {
+      "name": "minecraft-crossplay",
+      "category": "integrations",
+      "description": "Assess or implement Java/Bedrock crossplay with Geyser/Floodgate, custom item mappings and equivalent player interactions.",
+      "path": "skills/integrations/minecraft-crossplay"
+    },
+    {
+      "name": "minecraft-data-generation",
+      "category": "modding",
+      "description": "Generate Minecraft recipes, tags, loot, language files and models using Fabric/NeoForge datagen or an existing deterministic asset pipeline.",
+      "path": "skills/modding/minecraft-data-generation"
+    },
+    {
+      "name": "minecraft-datapacks",
+      "category": "datapack",
+      "description": "Create or debug Minecraft Java datapacks, functions, tags, predicates, advancements and target-version data registries.",
+      "path": "skills/datapack/minecraft-datapacks"
+    },
+    {
+      "name": "minecraft-dependency-detection",
+      "category": "core",
+      "description": "Resolve installed dependencies, pinned API artifacts and build-tool compatibility without speculative additions.",
+      "path": "skills/core/minecraft-dependency-detection"
+    },
+    {
+      "name": "minecraft-dialog-ui",
+      "category": "ui/dialog",
+      "description": "Build or debug Minecraft Java Dialog screens, custom actions, forms and resource-pack-backed Dialog artwork.",
+      "path": "skills/ui/dialog/minecraft-dialog-ui"
+    },
+    {
+      "name": "minecraft-economy",
+      "category": "gameplay/economy",
+      "description": "Design and implement genre-neutral Minecraft currencies, prices and transactional trading.",
+      "path": "skills/gameplay/economy/minecraft-economy"
+    },
+    {
+      "name": "minecraft-entity-ai",
+      "category": "gameplay",
+      "description": "Implement Minecraft mob/NPC/pet behavior, navigation, spawning and entity lifecycle on the chosen plugin/mod/add-on platform.",
+      "path": "skills/gameplay/minecraft-entity-ai"
+    },
+    {
+      "name": "minecraft-evidence",
+      "category": "automation",
+      "description": "Verify Minecraft APIs, formats, mechanics and tool availability; avoid fabricated symbols, citations, compatibility and test results.",
+      "path": "skills/automation/minecraft-evidence"
+    },
+    {
+      "name": "minecraft-exploration-content",
+      "category": "gameplay",
+      "description": "Implement Minecraft exploration routes, structures, encounters, discoveries and renewable resource locations without assuming a mining or RPG server.",
+      "path": "skills/gameplay/minecraft-exploration-content"
+    },
+    {
+      "name": "minecraft-fabric-mod",
+      "category": "modding/fabric",
+      "description": "Create or maintain Fabric Minecraft Java mods, registries, entrypoints and client/server code separation.",
+      "path": "skills/modding/fabric/minecraft-fabric-mod"
+    },
+    {
+      "name": "minecraft-farming",
+      "category": "gameplay/farming",
+      "description": "Implement optional plant or livestock systems without imposing farming on other game modes.",
+      "path": "skills/gameplay/farming/minecraft-farming"
+    },
+    {
+      "name": "minecraft-forge-mod",
+      "category": "modding/forge",
+      "description": "Build Forge mods using version-matched MDK, registries, event buses and physical-side separation.",
+      "path": "skills/modding/forge/minecraft-forge-mod"
+    },
+    {
+      "name": "minecraft-game-sessions",
+      "category": "gameplay",
+      "description": "Build Minecraft lobbies, queues, matches, rounds, spectator flows and isolated game sessions with reliable cleanup.",
+      "path": "skills/gameplay/minecraft-game-sessions"
+    },
+    {
+      "name": "minecraft-gameplay-design",
+      "category": "gameplay",
+      "description": "Research or design Minecraft mechanics across survival, creative, adventure, PvP/PvE, minigames and technical play without imposing a genre.",
+      "path": "skills/gameplay/minecraft-gameplay-design"
+    },
+    {
+      "name": "minecraft-hosting",
+      "category": "operations",
+      "description": "Set up or debug Minecraft server startup, local/public resource-pack hosting, ports, scripts and restart behavior on Windows or Linux.",
+      "path": "skills/operations/minecraft-hosting"
+    },
+    {
+      "name": "minecraft-hud-localization",
+      "category": "ui",
+      "description": "Implement Minecraft sidebars, boss/action bars, item tooltips, rarity styling or localization with Adventure components.",
+      "path": "skills/ui/minecraft-hud-localization"
+    },
+    {
+      "name": "minecraft-inventory-transactions",
+      "category": "data",
+      "description": "Implement Minecraft item transfers, crafting commits, loadout swaps, trades and optional economy effects with loss/duplication protection.",
+      "path": "skills/data/minecraft-inventory-transactions"
+    },
+    {
+      "name": "minecraft-inventory-ui",
+      "category": "ui/inventory",
+      "description": "Create chest-style Minecraft menus or fix click, drag, shift-click and inventory-transfer behavior.",
+      "path": "skills/ui/inventory/minecraft-inventory-ui"
+    },
+    {
+      "name": "minecraft-item-models",
+      "category": "resourcepack",
+      "description": "Implement custom Minecraft Java item visuals, item-model definitions, texture atlases or model-selection components.",
+      "path": "skills/resourcepack/minecraft-item-models"
+    },
+    {
+      "name": "minecraft-items-equipment",
+      "category": "gameplay",
+      "description": "Implement Minecraft item identities, equipment effects, durability, consumables, optional rarity and item lifecycle across gameplay modes.",
+      "path": "skills/gameplay/minecraft-items-equipment"
+    },
+    {
+      "name": "minecraft-map-design",
+      "category": "worldbuilding",
+      "description": "Design or validate Minecraft maps, arenas, hubs, adventure levels, creative plots and starter spaces for the chosen gameplay.",
+      "path": "skills/worldbuilding/minecraft-map-design"
+    },
+    {
+      "name": "minecraft-menu-ux",
+      "category": "ui/interactive",
+      "description": "Review Minecraft menus, selectors, loadouts, crafting screens, shops and settings for readable state and reliable input.",
+      "path": "skills/ui/interactive/minecraft-menu-ux"
+    },
+    {
+      "name": "minecraft-movement-abilities",
+      "category": "gameplay",
+      "description": "Implement Minecraft parkour, checkpoints, dashes, flight, mounts, teleportation and cooldown abilities with server-authoritative rules.",
+      "path": "skills/gameplay/minecraft-movement-abilities"
+    },
+    {
+      "name": "minecraft-neoforge-mod",
+      "category": "modding/neoforge",
+      "description": "Create or port NeoForge Minecraft Java mods, registries, event buses, data attachments and distribution-specific behavior.",
+      "path": "skills/modding/neoforge/minecraft-neoforge-mod"
+    },
+    {
+      "name": "minecraft-network-payloads",
+      "category": "modding",
+      "description": "Design or debug Fabric/NeoForge custom network payloads, menu synchronization and validated client requests.",
+      "path": "skills/modding/minecraft-network-payloads"
+    },
+    {
+      "name": "minecraft-pack-delivery",
+      "category": "resourcepack",
+      "description": "Build, host or debug Minecraft Java resource-pack metadata, URLs, hashes, required-pack status and client compatibility.",
+      "path": "skills/resourcepack/minecraft-pack-delivery"
+    },
+    {
+      "name": "minecraft-paper-plugin",
+      "category": "server/paper",
+      "description": "Create or maintain Bukkit/Paper plugins, plugin descriptors, service boundaries and startup/shutdown behavior.",
+      "path": "skills/server/paper/minecraft-paper-plugin"
+    },
+    {
+      "name": "minecraft-performance",
+      "category": "debugging",
+      "description": "Diagnose Minecraft tick lag, memory growth or plugin throughput using reproducible profiling and bounded workload design.",
+      "path": "skills/debugging/minecraft-performance"
+    },
+    {
+      "name": "minecraft-permission-providers",
+      "category": "integrations",
+      "description": "Integrate LuckPerms or existing Minecraft permission services, contextual access and temporary/admin grants.",
+      "path": "skills/integrations/minecraft-permission-providers"
+    },
+    {
+      "name": "minecraft-persistence",
+      "category": "data",
+      "description": "Design or repair Minecraft player, island, item and transaction persistence, migrations and recovery after restart or crash.",
+      "path": "skills/data/minecraft-persistence"
+    },
+    {
+      "name": "minecraft-platform-detection",
+      "category": "core",
+      "description": "Distinguish Java server platforms, proxies, mod loaders and Bedrock execution environments.",
+      "path": "skills/core/minecraft-platform-detection"
+    },
+    {
+      "name": "minecraft-plugin-apis",
+      "category": "integrations",
+      "description": "Integrate existing Minecraft economy, island, protection or content plugins without redundant services or unsafe lifecycle assumptions.",
+      "path": "skills/integrations/minecraft-plugin-apis"
+    },
+    {
+      "name": "minecraft-progression-objectives",
+      "category": "gameplay/progression",
+      "description": "Build Minecraft objectives, achievements, quests, scores, unlocks and reward balance for persistent or session-based games.",
+      "path": "skills/gameplay/progression/minecraft-progression-objectives"
+    },
+    {
+      "name": "minecraft-project-context",
+      "category": "core",
+      "description": "Resolve project context before Minecraft changes. Inspect existing architecture, requested outcome and trust boundaries.",
+      "path": "skills/core/minecraft-project-context"
+    },
+    {
+      "name": "minecraft-proxy-security",
+      "category": "integrations",
+      "description": "Configure or debug Minecraft Velocity/Bungee-style proxy identity forwarding and protected backend connections.",
+      "path": "skills/integrations/minecraft-proxy-security"
+    },
+    {
+      "name": "minecraft-purpur-plugin",
+      "category": "server/purpur",
+      "description": "Develop Purpur features while distinguishing inherited Paper APIs and Purpur-specific behavior.",
+      "path": "skills/server/purpur/minecraft-purpur-plugin"
+    },
+    {
+      "name": "minecraft-quests",
+      "category": "gameplay/quests",
+      "description": "Implement optional objectives and quest state with idempotent completion and recovery.",
+      "path": "skills/gameplay/quests/minecraft-quests"
+    },
+    {
+      "name": "minecraft-recipes-loot",
+      "category": "data",
+      "description": "Implement Minecraft crafting, furnace/processing recipes or loot tables while preserving custom item identity and preventing value loops.",
+      "path": "skills/data/minecraft-recipes-loot"
+    },
+    {
+      "name": "minecraft-release-recovery",
+      "category": "deployment",
+      "description": "Prepare Minecraft plugin/mod/pack releases, server upgrades, compatible data migrations and tested rollback plans.",
+      "path": "skills/deployment/minecraft-release-recovery"
+    },
+    {
+      "name": "minecraft-scheduling",
+      "category": "core",
+      "description": "Fix Minecraft scheduling, asynchronous I/O, task cancellation or Paper/Folia thread-ownership bugs.",
+      "path": "skills/core/minecraft-scheduling"
+    },
+    {
+      "name": "minecraft-schematics",
+      "category": "worldbuilding",
+      "description": "Generate, inspect or convert .litematic, .schem and vanilla structure NBT files and verify their imported blocks/entities.",
+      "path": "skills/worldbuilding/minecraft-schematics"
+    },
+    {
+      "name": "minecraft-spigot-plugin",
+      "category": "server/spigot",
+      "description": "Build Spigot/Bukkit plugins with target-specific APIs and descriptors.",
+      "path": "skills/server/spigot/minecraft-spigot-plugin"
+    },
+    {
+      "name": "minecraft-subagents",
+      "category": "automation",
+      "description": "Coordinate authorized Minecraft subagent research, implementation or review with bounded tasks, separate edit ownership and parent verification.",
+      "path": "skills/automation/minecraft-subagents"
+    },
+    {
+      "name": "minecraft-survival-simulation",
+      "category": "gameplay",
+      "description": "Tune Minecraft survival simulation, growth, breeding, spawning, hunger, weather and renewable resources while preserving target-runtime behavior.",
+      "path": "skills/gameplay/minecraft-survival-simulation"
+    },
+    {
+      "name": "minecraft-task-classifier",
+      "category": "routing",
+      "description": "Classify Minecraft tasks into platforms, content, UI, mechanics or operations and select a minimal skill set.",
+      "path": "skills/routing/minecraft-task-classifier"
+    },
+    {
+      "name": "minecraft-teams-social",
+      "category": "gameplay",
+      "description": "Build Minecraft parties, teams, guilds, cooperative ownership and role changes with authoritative membership and scoped access.",
+      "path": "skills/gameplay/minecraft-teams-social"
+    },
+    {
+      "name": "minecraft-testing",
+      "category": "testing",
+      "description": "Test Minecraft plugin/mod/data changes with pure checks, matching isolated runtimes and real-client validation where needed.",
+      "path": "skills/testing/minecraft-testing"
+    },
+    {
+      "name": "minecraft-velocity-plugin",
+      "category": "server/velocity",
+      "description": "Implement Velocity proxy plugins and secure proxy/backend integration.",
+      "path": "skills/server/velocity/minecraft-velocity-plugin"
+    },
+    {
+      "name": "minecraft-version-compatibility",
+      "category": "core",
+      "description": "Select compatible Minecraft versions, loaders, Java toolchains and APIs when starting, upgrading or diagnosing a Minecraft project.",
+      "path": "skills/core/minecraft-version-compatibility"
+    },
+    {
+      "name": "minecraft-version-detection",
+      "category": "core",
+      "description": "Detect exact Minecraft releases, loader builds, Java and content formats from project artifacts.",
+      "path": "skills/core/minecraft-version-detection"
+    },
+    {
+      "name": "minecraft-world-generation",
+      "category": "worldbuilding",
+      "description": "Create Minecraft void/custom worlds, dimension generators or safely replace an existing playable world.",
+      "path": "skills/worldbuilding/minecraft-world-generation"
+    }
+  ]
+}

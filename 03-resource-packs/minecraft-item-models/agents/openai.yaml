@@ -1,6 +1,0 @@
-interface:
-  display_name: "Item models, components and textures"
-  short_description: "Minecraft: Item models, components and textures"
-  default_prompt: "Use $minecraft-item-models for this task: A custom crop model is invisible in the shop but visible in hand; trace the client-item definition and atlas."
-policy:
-  allow_implicit_invocation: true

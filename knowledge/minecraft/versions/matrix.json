@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "releases": [
+    {
+      "edition": "java",
+      "minecraft": "1.21.9",
+      "resource_pack": [
+        69,
+        0
+      ],
+      "data_pack": [
+        88,
+        0
+      ],
+      "source": "release-1219",
+      "confidence": "official",
+      "verification": "documented",
+      "checked": "2026-10-06",
+      "platforms": [
+        {
+          "name": "paper",
+          "java_recommended": 21,
+          "source": "paper-start",
+          "verification": "documented",
+          "build": null
+        }
+      ],
+      "compile_tested": false,
+      "runtime_tested": false,
+      "client_tested": false
+    },
+    {
+      "edition": "java",
+      "minecraft": "1.21.11",
+      "resource_pack": [
+        75,
+        0
+      ],
+      "data_pack": [
+        94,
+        1
+      ],
+      "source": "release-12111",
+      "confidence": "official",
+      "verification": "documented",
+      "checked": "2026-10-06",
+      "platforms": [
+        {
+          "name": "paper",
+          "java_recommended": 21,
+          "source": "paper-start",
+          "verification": "documented",
+          "build": null
+        }
+      ],
+      "compile_tested": false,
+      "runtime_tested": false,
+      "client_tested": false
+    }
+  ]
+}

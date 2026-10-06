@@ -1,0 +1,16 @@
+{
+  "skill": "minecraft-movement-abilities",
+  "prompt": "Add a parkour checkpoint teleport and a bounded dash that cannot cross arena walls.",
+  "context": {
+    "edition": "java",
+    "minecraft": null,
+    "platform": null
+  },
+  "expected": [
+    "Resolve missing target facts before version-dependent generation.",
+    "Use matching inspected evidence for material API/format claims.",
+    "Preserve scope and report actual checks separately from unavailable checks.",
+    "Task-specific verification: Test collisions, boundaries, unloaded destinations, low TPS, logout during teleport, spectator state and ability exit cleanup on actual clients."
+  ],
+  "evaluation": "manual-or-external-agent; not executed by structural test runner"
+}

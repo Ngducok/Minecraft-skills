@@ -1,0 +1,12 @@
+# Evidence reference
+
+Contracts describe intended applicability, not certified binary compatibility. Resolve exact version/build, toolchain and dependency coordinates. Inspect pinned APIs or native assets before using symbols/formats.
+
+Source inspection checks documentation; it does not establish compile, runtime or client success. Rolling documentation may target a different release. Community design guidance and inferred balancing are not official mechanics.
+
+## Sources
+
+- [ChunkGenerator contract](https://jd.papermc.io/paper/1.21.11/org/bukkit/generator/ChunkGenerator.html) — registry ID `worldgen`; inspected 2026-10-06. Versioned example: generation callbacks need thread safety and must not recursively fetch their generating chunk.
+- [Paper updates](https://docs.papermc.io/paper/updating/) — registry ID `update`; inspected 2026-10-06. Upgrade worlds and plugins with a restorable backup; source/build compatibility is separate from data compatibility.
+
+Shared source records: [knowledge/sources.json](../../../knowledge/sources.json).

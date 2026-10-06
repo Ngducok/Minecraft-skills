@@ -1,0 +1,46 @@
+{
+  "name": "minecraft-purpur-plugin",
+  "version": "1.0.0",
+  "description": "Develop Purpur features while distinguishing inherited Paper APIs and Purpur-specific behavior.",
+  "category": "server/purpur",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [
+      "purpur"
+    ],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "source_files",
+    "descriptor_or_configuration",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api",
+    "compile",
+    "artifact-inspection",
+    "startup-shutdown",
+    "relevant-client-server-behavior"
+  ],
+  "sources": [
+    "purpur",
+    "paper-setup"
+  ]
+}

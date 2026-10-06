@@ -1,0 +1,41 @@
+{
+  "name": "minecraft-world-generation",
+  "version": "1.0.0",
+  "description": "Create Minecraft void/custom worlds, dimension generators or safely replace an existing playable world.",
+  "category": "worldbuilding",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "worldgen",
+    "update"
+  ]
+}

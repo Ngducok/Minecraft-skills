@@ -1,0 +1,43 @@
+{
+  "name": "minecraft-agent",
+  "version": "1.0.0",
+  "description": "Route broad Minecraft development and research tasks to edition-appropriate platform, gameplay, UI, asset and operations skills.",
+  "category": "routing",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "paper-start",
+    "fabric",
+    "neoforge",
+    "bedrock-start"
+  ]
+}

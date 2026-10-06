@@ -1,0 +1,44 @@
+{
+  "name": "minecraft-datapacks",
+  "version": "1.0.0",
+  "description": "Create or debug Minecraft Java datapacks, functions, tags, predicates, advancements and target-version data registries.",
+  "category": "datapack",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "namespaced_assets_or_data",
+    "pack_metadata",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "exact-format",
+    "parse-and-readback",
+    "matching-runtime-reload",
+    "relevant-client-render"
+  ],
+  "sources": [
+    "release-1219",
+    "release-12111",
+    "recipes"
+  ]
+}

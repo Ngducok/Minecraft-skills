@@ -1,0 +1,42 @@
+{
+  "name": "minecraft-data-generation",
+  "version": "1.0.0",
+  "description": "Generate Minecraft recipes, tags, loot, language files and models using Fabric/NeoForge datagen or an existing deterministic asset pipeline.",
+  "category": "modding",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "changed_artifacts",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "relevant-build-or-runtime"
+  ],
+  "sources": [
+    "datagen",
+    "recipes",
+    "components"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "minecraft-dialog-ui",
+  "version": "1.0.0",
+  "description": "Build or debug Minecraft Java Dialog screens, custom actions, forms and resource-pack-backed Dialog artwork.",
+  "category": "ui/dialog",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [
+      "paper",
+      "purpur"
+    ],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "ui_source_or_assets",
+    "interaction_handlers",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "input-boundaries",
+    "state-transitions",
+    "gui-scale-and-hit-testing",
+    "matching-client-render"
+  ],
+  "sources": [
+    "dialog",
+    "packs",
+    "text-access"
+  ]
+}

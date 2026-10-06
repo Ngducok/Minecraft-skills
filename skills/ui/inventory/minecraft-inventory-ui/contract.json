@@ -1,0 +1,44 @@
+{
+  "name": "minecraft-inventory-ui",
+  "version": "1.0.0",
+  "description": "Create chest-style Minecraft menus or fix click, drag, shift-click and inventory-transfer behavior.",
+  "category": "ui/inventory",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "ui_source_or_assets",
+    "interaction_handlers",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "input-boundaries",
+    "state-transitions",
+    "gui-scale-and-hit-testing",
+    "matching-client-render"
+  ],
+  "sources": [
+    "inventory",
+    "inventory-event"
+  ]
+}

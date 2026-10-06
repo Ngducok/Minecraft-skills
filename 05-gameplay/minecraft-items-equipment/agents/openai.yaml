@@ -1,6 +1,0 @@
-interface:
-  display_name: "Items, equipment and custom identity"
-  short_description: "Minecraft: Items, equipment and custom identity"
-  default_prompt: "Use $minecraft-items-equipment for this task: Add a charged utility item usable in survival and arena kits without assuming random rarity rolls."
-policy:
-  allow_implicit_invocation: true

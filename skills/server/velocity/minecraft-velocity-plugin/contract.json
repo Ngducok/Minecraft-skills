@@ -1,0 +1,45 @@
+{
+  "name": "minecraft-velocity-plugin",
+  "version": "1.0.0",
+  "description": "Implement Velocity proxy plugins and secure proxy/backend integration.",
+  "category": "server/velocity",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [
+      "velocity"
+    ],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "source_files",
+    "descriptor_or_configuration",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api",
+    "compile",
+    "artifact-inspection",
+    "startup-shutdown",
+    "relevant-client-server-behavior"
+  ],
+  "sources": [
+    "velocity-start"
+  ]
+}

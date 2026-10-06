@@ -1,6 +1,0 @@
-interface:
-  display_name: "Bitmap fonts and glyph geometry"
-  short_description: "Minecraft: Bitmap fonts and glyph geometry"
-  default_prompt: "Use $minecraft-bitmap-fonts for this task: A transparent font panel renders correctly but shifts every clickable area after the second glyph."
-policy:
-  allow_implicit_invocation: true

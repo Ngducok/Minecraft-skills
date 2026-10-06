@@ -1,0 +1,45 @@
+{
+  "name": "minecraft-creative-building",
+  "version": "1.0.0",
+  "description": "Build Minecraft creative/building workflows, selection tools, blueprints, batch edits and undo with ownership and bounded world changes.",
+  "category": "gameplay",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "rules_or_source",
+    "state_and_recovery_plan",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "rules-invariants",
+    "multiplayer-authority",
+    "duplication-and-recovery",
+    "relevant-runtime"
+  ],
+  "sources": [
+    "worldedit",
+    "worldguard",
+    "worldgen"
+  ]
+}

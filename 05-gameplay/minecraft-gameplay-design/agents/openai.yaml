@@ -1,6 +1,0 @@
-interface:
-  display_name: "Gameplay contracts and mode selection"
-  short_description: "Minecraft: Gameplay contracts and mode selection"
-  default_prompt: "Use $minecraft-gameplay-design for this task: Compare a vanilla survival extension and a round-based parkour game without assuming either needs RPG stats or money."
-policy:
-  allow_implicit_invocation: true

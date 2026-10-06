@@ -1,6 +1,0 @@
-interface:
-  display_name: "Exploration, structures and world content"
-  short_description: "Minecraft: Exploration, structures and world content"
-  default_prompt: "Use $minecraft-exploration-content for this task: Place discoverable landmarks and renewable resources in an exploration world without granting repeatable unique loot."
-policy:
-  allow_implicit_invocation: true

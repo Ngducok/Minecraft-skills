@@ -1,0 +1,47 @@
+{
+  "name": "minecraft-progression-objectives",
+  "version": "1.0.0",
+  "description": "Build Minecraft objectives, achievements, quests, scores, unlocks and reward balance for persistent or session-based games.",
+  "category": "gameplay/progression",
+  "supports": {
+    "editions": [
+      "java",
+      "bedrock"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "rules_or_source",
+    "state_and_recovery_plan",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "rules-invariants",
+    "multiplayer-authority",
+    "duplication-and-recovery",
+    "relevant-runtime"
+  ],
+  "sources": [
+    "advancement",
+    "scoreboard",
+    "events",
+    "pdc",
+    "database"
+  ]
+}

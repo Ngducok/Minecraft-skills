@@ -1,0 +1,14 @@
+{
+  "edition": "java",
+  "minecraft": null,
+  "platform": null,
+  "platform_version": null,
+  "java": null,
+  "build_system": "maven",
+  "dependencies": [],
+  "client_versions": [
+    "1.21.11"
+  ],
+  "resource_pack": null,
+  "data_pack": null
+}

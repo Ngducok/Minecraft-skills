@@ -1,6 +1,0 @@
-interface:
-  display_name: "Coworker collaboration and handoffs"
-  short_description: "Minecraft: Coworker collaboration and handoffs"
-  default_prompt: "Use $minecraft-coworker for this task: Continue a teammate's plugin fix while preserving their uncommitted changes and documenting remaining client checks."
-policy:
-  allow_implicit_invocation: true

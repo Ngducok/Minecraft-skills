@@ -1,6 +1,0 @@
-interface:
-  display_name: "Paper plugin lifecycle and structure"
-  short_description: "Minecraft: Paper plugin lifecycle and structure"
-  default_prompt: "Use $minecraft-paper-plugin for this task: Add a small plugin feature while retaining the existing build and keeping startup failure recoverable."
-policy:
-  allow_implicit_invocation: true

@@ -1,6 +1,0 @@
-interface:
-  display_name: "Server and pack hosting operations"
-  short_description: "Minecraft: Server and pack hosting operations"
-  default_prompt: "Use $minecraft-hosting for this task: Create portable cmd/PowerShell launchers without assuming the server and client share localhost."
-policy:
-  allow_implicit_invocation: true

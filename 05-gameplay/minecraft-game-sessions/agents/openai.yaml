@@ -1,6 +1,0 @@
-interface:
-  display_name: "Matches, rounds and session lifecycle"
-  short_description: "Minecraft: Matches, rounds and session lifecycle"
-  default_prompt: "Use $minecraft-game-sessions for this task: Implement cooperative timed rounds that recover player state when the last participant disconnects."
-policy:
-  allow_implicit_invocation: true

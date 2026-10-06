@@ -1,0 +1,16 @@
+{
+  "skill": "minecraft-task-classifier",
+  "prompt": "Classify Minecraft tasks into platforms, content, UI, mechanics or operations and select a minimal skill set.",
+  "context": {
+    "edition": "java",
+    "minecraft": null,
+    "platform": null
+  },
+  "expected": [
+    "Resolve missing target facts before version-dependent generation.",
+    "Use matching inspected evidence for material API/format claims.",
+    "Preserve scope and report actual checks separately from unavailable checks.",
+    "Task-specific verification: Record inspected inputs, exact target and performed checks. Report unavailable build, runtime and client checks separately."
+  ],
+  "evaluation": "manual-or-external-agent; not executed by structural test runner"
+}

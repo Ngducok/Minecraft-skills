@@ -1,0 +1,46 @@
+{
+  "name": "minecraft-hud-localization",
+  "version": "1.0.0",
+  "description": "Implement Minecraft sidebars, boss/action bars, item tooltips, rarity styling or localization with Adventure components.",
+  "category": "ui",
+  "supports": {
+    "editions": [
+      "java"
+    ],
+    "platforms": [],
+    "verified_versions": [],
+    "policy": "resolve-exact-target"
+  },
+  "requires": {
+    "context": [
+      "edition",
+      "minecraft",
+      "platform"
+    ],
+    "java": null
+  },
+  "inputs": [
+    "project_context",
+    "task"
+  ],
+  "outputs": [
+    "ui_source_or_assets",
+    "interaction_handlers",
+    "verification_report"
+  ],
+  "validation": [
+    "contract",
+    "references",
+    "target-api-or-format",
+    "input-boundaries",
+    "state-transitions",
+    "gui-scale-and-hit-testing",
+    "matching-client-render"
+  ],
+  "sources": [
+    "scoreboard",
+    "localization",
+    "minimessage",
+    "contrast-access"
+  ]
+}
