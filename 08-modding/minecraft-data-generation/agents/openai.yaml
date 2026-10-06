@@ -1,0 +1,6 @@
+interface:
+  display_name: "Versioned data generation and validation"
+  short_description: "Minecraft: Versioned data generation and validation"
+  default_prompt: "Use $minecraft-data-generation for this task: Unify item definitions and recipes while keeping manually painted textures untouched."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Fabric mod development"
+  short_description: "Minecraft: Fabric mod development"
+  default_prompt: "Use $minecraft-fabric-mod for this task: A Fabric feature works in singleplayer but crashes a dedicated server by loading a screen class."
+policy:
+  allow_implicit_invocation: true

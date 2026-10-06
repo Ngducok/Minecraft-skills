@@ -1,0 +1,6 @@
+interface:
+  display_name: "Evidence and hallucination prevention"
+  short_description: "Minecraft: Evidence and hallucination prevention"
+  default_prompt: "Use $minecraft-evidence for this task: An answer proposes an undocumented Dialog callback method; verify its signature and a minimal compile before writing feature code."
+policy:
+  allow_implicit_invocation: true

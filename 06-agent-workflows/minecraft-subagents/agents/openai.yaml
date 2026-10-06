@@ -1,0 +1,6 @@
+interface:
+  display_name: "Bounded subagent delegation"
+  short_description: "Minecraft: Bounded subagent delegation"
+  default_prompt: "Use $minecraft-subagents for this task: Split an authorized crossplay review into Java UI and Bedrock mapping checks, then reconcile their evidence."
+policy:
+  allow_implicit_invocation: true

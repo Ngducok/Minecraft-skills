@@ -1,0 +1,6 @@
+interface:
+  display_name: "World generation and dimension changes"
+  short_description: "Minecraft: World generation and dimension changes"
+  default_prompt: "Use $minecraft-world-generation for this task: Replace a test Overworld with a void map while keeping player data and a usable rollback."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Profiling and bounded server work"
+  short_description: "Minecraft: Profiling and bounded server work"
+  default_prompt: "Use $minecraft-performance for this task: A custom farm plugin scans all islands every tick; identify measured costs and replace the unbounded scan."
+policy:
+  allow_implicit_invocation: true

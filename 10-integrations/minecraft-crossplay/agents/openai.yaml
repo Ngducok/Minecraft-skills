@@ -1,0 +1,6 @@
+interface:
+  display_name: "Geyser and cross-edition compatibility"
+  short_description: "Minecraft: Geyser and cross-edition compatibility"
+  default_prompt: "Use $minecraft-crossplay for this task: A Java custom crop shop needs a usable Bedrock path without changing its economic rules."
+policy:
+  allow_implicit_invocation: true
