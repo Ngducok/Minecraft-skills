@@ -1,0 +1,6 @@
+interface:
+  display_name: "Item transfers and atomic effects"
+  short_description: "Minecraft: Item transfers and atomic effects"
+  default_prompt: "Use $minecraft-inventory-transactions for this task: A loadout swap overwrites items when inventory is full; preserve both equipment and remainder."
+policy:
+  allow_implicit_invocation: true

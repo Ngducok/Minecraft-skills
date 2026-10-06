@@ -1,0 +1,6 @@
+interface:
+  display_name: "Movement, traversal and abilities"
+  short_description: "Minecraft: Movement, traversal and abilities"
+  default_prompt: "Use $minecraft-movement-abilities for this task: Add a parkour checkpoint teleport and a bounded dash that cannot cross arena walls."
+policy:
+  allow_implicit_invocation: true

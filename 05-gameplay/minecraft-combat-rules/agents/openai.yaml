@@ -1,0 +1,6 @@
+interface:
+  display_name: "Damage, combat and encounter rules"
+  short_description: "Minecraft: Damage, combat and encounter rules"
+  default_prompt: "Use $minecraft-combat-rules for this task: Add a friendly-fire rule to a team arena while preserving vanilla armor and attack cooldowns."
+policy:
+  allow_implicit_invocation: true

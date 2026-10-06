@@ -1,0 +1,6 @@
+interface:
+  display_name: "Scheduling, threads and Folia ownership"
+  short_description: "Minecraft: Scheduling, threads and Folia ownership"
+  default_prompt: "Use $minecraft-scheduling for this task: Move database work off the tick thread without reading inventories asynchronously or losing a pending result."
+policy:
+  allow_implicit_invocation: true

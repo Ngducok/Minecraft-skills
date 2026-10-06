@@ -1,0 +1,6 @@
+interface:
+  display_name: "Crafting, redstone and item processing"
+  short_description: "Minecraft: Crafting, redstone and item processing"
+  default_prompt: "Use $minecraft-crafting-automation for this task: Fix a hopper-fed processor that consumes inputs again when its output chest is full."
+policy:
+  allow_implicit_invocation: true

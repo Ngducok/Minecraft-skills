@@ -1,0 +1,6 @@
+interface:
+  display_name: "Commands and action authorization"
+  short_description: "Minecraft: Commands and action authorization"
+  default_prompt: "Use $minecraft-commands-permissions for this task: Create a purchase command with optional quantity and suggestions without allowing unauthorized console-equivalent actions."
+policy:
+  allow_implicit_invocation: true

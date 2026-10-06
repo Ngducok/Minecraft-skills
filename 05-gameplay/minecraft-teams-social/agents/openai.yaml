@@ -1,0 +1,6 @@
+interface:
+  display_name: "Teams, cooperation and shared ownership"
+  short_description: "Minecraft: Teams, cooperation and shared ownership"
+  default_prompt: "Use $minecraft-teams-social for this task: Let a cooperative team share build rights without granting members global administrative permissions."
+policy:
+  allow_implicit_invocation: true

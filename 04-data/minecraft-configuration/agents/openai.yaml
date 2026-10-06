@@ -1,0 +1,6 @@
+interface:
+  display_name: "Configuration validation and migration"
+  short_description: "Minecraft: Configuration validation and migration"
+  default_prompt: "Use $minecraft-configuration for this task: Add a growth-rate setting without changing existing prices or silently accepting NaN."
+policy:
+  allow_implicit_invocation: true

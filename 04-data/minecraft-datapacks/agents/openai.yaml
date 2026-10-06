@@ -1,0 +1,6 @@
+interface:
+  display_name: "Java datapack development"
+  short_description: "Minecraft: Java datapack development"
+  default_prompt: "Use $minecraft-datapacks for this task: Port an old datapack to a newer release without resetting player quest state."
+policy:
+  allow_implicit_invocation: true

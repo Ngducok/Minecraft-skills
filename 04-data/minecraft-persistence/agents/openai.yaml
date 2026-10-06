@@ -1,0 +1,6 @@
+interface:
+  display_name: "Persistent state and recovery"
+  short_description: "Minecraft: Persistent state and recovery"
+  default_prompt: "Use $minecraft-persistence for this task: A balance reverts after logout because an older asynchronous save finishes last."
+policy:
+  allow_implicit_invocation: true

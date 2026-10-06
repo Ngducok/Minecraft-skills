@@ -1,0 +1,6 @@
+interface:
+  display_name: "Native simulation and renewable systems"
+  short_description: "Minecraft: Native simulation and renewable systems"
+  default_prompt: "Use $minecraft-survival-simulation for this task: Change animal population rules and crop timing on an SMP while retaining vanilla drops and player contraptions."
+policy:
+  allow_implicit_invocation: true

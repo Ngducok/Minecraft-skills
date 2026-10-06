@@ -1,0 +1,6 @@
+interface:
+  display_name: "Version and platform compatibility"
+  short_description: "Minecraft: Version and platform compatibility"
+  default_prompt: "Use $minecraft-version-compatibility for this task: A plugin compiles on a newer API but fails on an older server; find the first incompatible symbol and smallest compatible change."
+policy:
+  allow_implicit_invocation: true

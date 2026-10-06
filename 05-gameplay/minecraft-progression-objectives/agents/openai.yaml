@@ -1,0 +1,6 @@
+interface:
+  display_name: "Objectives, rewards and progression"
+  short_description: "Minecraft: Objectives, rewards and progression"
+  default_prompt: "Use $minecraft-progression-objectives for this task: Add adventure checkpoints and round scores without granting duplicate rewards after reconnect."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Entities, navigation and behavior"
+  short_description: "Minecraft: Entities, navigation and behavior"
+  default_prompt: "Use $minecraft-entity-ai for this task: Make a guide NPC follow its player without stripping unrelated mob behavior or flooding path requests."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Native Dialog menus"
+  short_description: "Minecraft: Native Dialog menus"
+  default_prompt: "Use $minecraft-dialog-ui for this task: A resource-pack Dialog only responds when its text is clicked; align drawable hit bounds with the intended card."
+policy:
+  allow_implicit_invocation: true

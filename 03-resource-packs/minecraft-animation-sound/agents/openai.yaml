@@ -1,0 +1,6 @@
+interface:
+  display_name: "Minecraft motion and sound feedback"
+  short_description: "Minecraft: Minecraft motion and sound feedback"
+  default_prompt: "Use $minecraft-animation-sound for this task: A shop animation resets the mouse every frame; replace repeated screen redraws with supported action feedback."
+policy:
+  allow_implicit_invocation: true
